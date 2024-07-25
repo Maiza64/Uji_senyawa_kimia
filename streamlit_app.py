@@ -120,7 +120,8 @@ def uji_iodoform(nama_sampel):
         st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel bukan merupakan Senyawa Alkohol Primer atau Sekunder yang memiliki Gugus Metil Keton.")
    
    # Create a title for the landing page
-st.header(":rainbow[Uji Senyawa Kimia]", divider ='gray')
+st.title(":rainbow[Uji Senyawa Kimia]")
+st.header("", divider= "gray")
 
 # Create a sidebar with a selectbox for sample number and chemical test
 with st.sidebar:
