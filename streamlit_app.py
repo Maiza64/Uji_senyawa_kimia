@@ -109,7 +109,7 @@ def uji_lucas(nama_sampel):
 # Definisikan fungsi uji Iodoform
 def uji_iodoform(nama_sampel):
     st.write("### Uji Iodoform")
-    hasil_iodoform = ":orange[Larutan berwarna Kuning dengan endapan] :green[(Uji positif)]" if nama_sampel.lower() == "06" else ":orange[Larutan tidak berwarna kuning dan tidak ada endapan] :red[(Uji negatif -)]"
+    hasil_iodoform = ":orange[Larutan berwarna Kuning dengan endapan], Sampel merupakan :blue-background[Etanol]. :green[(Uji positif)]" if nama_sampel.lower() == "06" else ":orange[Larutan tidak berwarna kuning dan tidak ada endapan] :red[(Uji negatif -)]"
     st.write(f"Hasil Uji Iodoform untuk {nama_sampel} adalah: {hasil_iodoform}")
     # Tambahkan uji positif
     if nama_sampel.lower() =="06":
