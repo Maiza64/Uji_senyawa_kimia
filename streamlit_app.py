@@ -156,15 +156,13 @@ with st.sidebar:
     nama_sampel = st.selectbox("Pilih nama sampel", [""] + list(sample_names.values()))
     uji_kimia = st.selectbox("Pilih uji kimia", [""] + list(chemical_tests.keys()))
     st.header("Kelompok 2")
-    st.write(
-        "1. Afdatul Saputra, 2120377"
-        "2. Azzahra Hanum, 2330493"
-        "3. Fadhlan Harish, 2330498"
-        "4. Maiza Sakhi Frisiandana, 2330508"
-        "5. Nanda Putria Darmadi, 2330517"
-        "6. Virgiola Aria Moza, 2330533"
-    )
-    
+    st.write("1. Afdatul Saputra, 2120377")
+    st.write("2. Azzahra Hanum, 2330493")
+    st.write("3. Fadhlan Harish, 2330498")
+    st.write("4. Maiza Sakhi Frisiandana, 2330508")
+    st.write("5. Nanda Putria Darmadi, 2330517")
+    st.write("6. Virgiola Aria Moza, 2330533")
+
 # Check if sample number and chemical test are selected
 if nama_sampel != "" and uji_kimia != "":
     # Get the sample code from the sample name
