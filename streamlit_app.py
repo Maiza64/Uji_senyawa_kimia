@@ -3,7 +3,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-color: #2C3E50;
+        background-color: #2980B9;
         color: white;
     }
     </style>
@@ -150,7 +150,7 @@ if nama_sampel!= "" and uji_kimia!= "":
         uji_iodoform(nama_sampel)
 else:
     # Display a message if no sample number or chemical test is selected
-    st.subheader(":white[Pengujian Senyawa Kimia]")
+    st.subheader("Pengujian Senyawa Kimia")
     st.write("adalah serangkaian prosedur yang digunakan untuk mengidentifikasi, dan menganalisis sifat fisik, kimia, dan biologis dari suatu senyawa atau campuran kimia.")
     st.write("Tujuan utama dari pengujian ini adalah untuk memahami karakteristik senyawa tersebut dalam berbagai kondisi ")
     st.write("Silakan pilih nomor sampel dan uji kimia pada sidebar untuk melihat hasilnya.")
