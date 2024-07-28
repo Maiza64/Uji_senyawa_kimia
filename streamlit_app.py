@@ -150,6 +150,7 @@ with st.sidebar:
     st.header("Menu")
     nama_sampel = st.selectbox("Pilih nama sampel", [""] + list(sample_names.values()))
     uji_kimia = st.selectbox("Pilih uji kimia", [""] + list(chemical_tests.keys()))
+    st.subheader("Kelompok 2")
 
 # Check if sample number and chemical test are selected
 if nama_sampel != "" and uji_kimia != "":
