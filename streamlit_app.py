@@ -23,7 +23,8 @@ def uji_molisch(nama_sampel):
 
     # Tambahkan uji negatif
     if nama_sampel.lower() not in ["01", "02"]:
-        st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel ini bukan merupakan Senyawa karbohidrat yang dimana pada uji ini umum untuk semua Senyawa Karbohidrat dan akan menghasilkan :green[Uji Positif +]. Lanjutkan pengujian kimia pada sampel Formaldehida, Heksana, t butil alkohol, dan Etanol menggunakan uji NaHSO3 untuk mengetahui senyawanya.")
+        st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel ini bukan merupakan Senyawa karbohidrat yang dimana pada uji ini umum untuk semua Senyawa Karbohidrat dan akan menghasilkan :green[Uji Positif +].")
+        st.write("Lanjutkan pengujian kimia pada sampel Formaldehida, Heksana, t butil alkohol, dan Etanol menggunakan uji NaHSO3 untuk mengetahui senyawanya.")
     
     # Definisikan fungsi uji Seliwanoff
 def uji_seliwanoff(nama_sampel):
@@ -37,7 +38,8 @@ def uji_seliwanoff(nama_sampel):
 
     # Tambahkan uji negatif
     if nama_sampel.lower() != "01":
-        st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel ini bukan termasuk Senyawa Karbohidrat Jenis Monosakarida. Lanjutkan pengujian kimia pada sampel Pati menggunakan uji Iodium untuk mengetahui senyawanya.")
+        st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel ini bukan termasuk Senyawa Karbohidrat Jenis Monosakarida.")
+        st.write("Lanjutkan pengujian kimia pada sampel Pati menggunakan uji Iodium untuk mengetahui senyawanya.")
 
 # Definisikan fungsi uji Iodium
 def uji_iodium(nama_sampel):
@@ -65,7 +67,8 @@ def uji_nahso3(nama_sampel):
 
     # Tambahkan uji negatif
     if nama_sampel.lower() != "03":
-        st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel bukan merupakan Senyawa Golongan Aldehida. Lanjutkan pengujian kimia pada sampel Heksana, t butil alkohol, dan Etanol menggunakan uji Cerric nitrat untuk mengetahui senyawanya.")
+        st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel bukan merupakan Senyawa Golongan Aldehida.")
+        st.write("Lanjutkan pengujian kimia pada sampel Heksana, t butil alkohol, dan Etanol menggunakan uji Cerric nitrat untuk mengetahui senyawanya.")
 
 # Definisikan fungsi uji Cerric nitrat
 def uji_cerric_nitrat(nama_sampel):
@@ -78,7 +81,8 @@ def uji_cerric_nitrat(nama_sampel):
 
     # Tambahkan uji negatif
     if nama_sampel.lower() not in ["04", "06"]:
-        st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel bukan termasuk dalam Senyawa Alkohol. Lanjutkan pengujian kimia pada sampel Heksana mengguanakan uji Iod-Huble untuk mengetahui senyawanya.")
+        st.write("Sampel menghasilkan :red[Uji Negatif -] , karena sampel bukan termasuk dalam Senyawa Alkohol.")
+        st.write("Lanjutkan pengujian kimia pada sampel Heksana mengguanakan uji Iod-Huble untuk mengetahui senyawanya.")
 
 # Definisikan fungsi uji Iod-Huble
 def uji_iod_huble(nama_sampel):
@@ -104,7 +108,8 @@ def uji_lucas(nama_sampel):
 
     # Tambahkan uji negatif
     if nama_sampel.lower() != "04":
-        st.write("Sampel menghasilkan :red[Uji Negatif -)] , karena sampel ini bukan merupakan Senyawa Alkohol Tersier atau Sekunder. Lanjutkan pengujian kimia pada sampel Etanol menggunakan uji Iodoform untuk mengetahui senyawanya.")
+        st.write("Sampel menghasilkan :red[Uji Negatif -)] , karena sampel ini bukan merupakan Senyawa Alkohol Tersier atau Sekunder.")
+        st.write("Lanjutkan pengujian kimia pada sampel Etanol menggunakan uji Iodoform untuk mengetahui senyawanya.")
 
 # Definisikan fungsi uji Iodoform
 def uji_iodoform(nama_sampel):
@@ -147,11 +152,19 @@ chemical_tests = {
 
 # Create a sidebar with a selectbox for sample number and chemical test
 with st.sidebar:
-    st.header("Menu")
+    st.title("Menu")
     nama_sampel = st.selectbox("Pilih nama sampel", [""] + list(sample_names.values()))
     uji_kimia = st.selectbox("Pilih uji kimia", [""] + list(chemical_tests.keys()))
-    st.subheader("Kelompok 2")
-
+    st.header("Kelompok 2")
+    st.write(
+        "1. Afdatul Saputra, 2120377"
+        "2. Azzahra Hanum, 2330493"
+        "3. Fadhlan Harish, 2330498"
+        "4. Maiza Sakhi Frisiandana, 2330508"
+        "5. Nanda Putria Darmadi, 2330517"
+        "6. Virgiola Aria Moza, 2330533"
+    )
+    
 # Check if sample number and chemical test are selected
 if nama_sampel != "" and uji_kimia != "":
     # Get the sample code from the sample name
