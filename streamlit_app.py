@@ -14,7 +14,7 @@ st.markdown(
 # Definisikan fungsi uji Molisch
 def uji_molisch(nama_sampel):
     st.write("### Uji Molisch")
-    hasil_molisch = "Terbentuk :violet-bakcground[Cincin Ungu] :green-background[(Uji Positif +)]" if nama_sampel.lower() in ["01", "02"] else "Tidak terbentuk :violet-background[Cincin Ungu] :red-background[(Uji Negatif -)]"
+    hasil_molisch = "Terbentuk :violet-background[Cincin Ungu] :green[(Uji Positif +)]" if nama_sampel.lower() in ["01", "02"] else "Tidak terbentuk :violet-background[Cincin Ungu] :red-background[(Uji Negatif -)]"
     st.write(f"Hasil Uji Molisch untuk {nama_sampel} adalah: {hasil_molisch}")
 
     # Tambahkan uji positif
