@@ -121,7 +121,7 @@ def uji_iodoform(nama_sampel):
    
    # Create a title for the landing page
 st.title(":rainbow[Uji Senyawa Kimia]")
-st.header("", divider= "gray")
+st.header("", divider= "black")
 
 # Define the sample names
 sample_names = {
